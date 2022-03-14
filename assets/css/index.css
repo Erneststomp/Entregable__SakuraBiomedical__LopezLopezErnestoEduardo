@@ -1,0 +1,567 @@
+/*Fuentes de Google Fonts para el proyecto*/
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+/*Checkbox para menu desplegable */ 
+input[type="checkbox"]{
+    display: none;
+}
+/*Grid para la division de la pagina de acuerdo a header, main y footer */
+.grid__father{
+    
+    display: grid;
+    margin: 0 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 3fr 1fr;
+    grid-row-gap: .5cm; 
+}
+
+/*Estilos Index-header */
+.grid__son{
+    max-height:7cm; 
+    margin: 0 0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto;
+    grid-row-gap: .5cm; 
+}
+
+/*Cambio de posicion de los elementos a relative para poder hacer que el fondo de pantalla no transparente el contenido */
+header{
+    background-color: rgba(255, 183, 183, 0.322);
+    position: relative;
+    padding: .5cm;
+}
+
+main{
+    position: relative;
+    padding: 1cm;
+}
+
+footer{
+    position: relative;
+}
+
+/*Seleccion del background con transparencia */
+.body__background {
+    padding: 0%;
+    margin: 0%;
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-image: url(..//images/background_sakura_01.png);;
+    background-repeat: no-repeat;
+    opacity: .2;
+}
+/* Estilos generales para todo el sitio */
+body{
+    font-family: 'Chakra Petch'; 
+    min-width: 280px;
+}
+
+h1{
+    color: rgb(228, 15, 15);
+    font-size: 1cm;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h2{
+    color: rgb(0, 0, 0);
+    font-size: .75cm;
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+p{
+    text-align: justify;  
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: .6cm;
+}
+
+/*Estilo Index-logos*/
+
+.body__header__headerdesign__logo {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: 350px;
+}
+
+/*Estilo Index-menu*/
+
+.body__main__nav__ul{
+    
+    display: grid;
+    padding: 0%;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+    grid-row-gap: 1cm;
+    grid-column-gap: .3cm;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+.body__main__nav__ul__liststyle{
+    list-style:none;
+    width: 155px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.body__main__nav__ul__liststyle__sectionstyle{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: .5cm;    
+    max-width: 80px;
+}
+
+.body__main__nav__ul__liststyle:hover {
+    
+    position: relative;
+    content: "";
+    background-color: rgba(255, 183, 183, .7);
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.body__main__nav__ul__liststyle__image{
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 75px;
+    height: 75px;
+}
+
+/*Estilo Index-footer*/
+.body__footer{ 
+    position: fixed;
+    background-color: rgb(175, 10, 10);
+    margin-top: 0cm;
+    margin-bottom: 0px;
+    height: 50px;
+    bottom: 0cm;
+    left: 0cm;
+    right: 0cm;
+    min-width: 280px;
+}
+.body__footer__style{
+    padding: .5cm;
+    margin-right: 0%;
+    color: rgb(255, 255, 255);
+    font-size: small;
+    text-align: right;
+}
+
+/*Estilo Header paginas que no son index*/
+.navigation__body__menu{
+    display: grid;
+    position: inherit;
+}
+.navigation__body__header__logo__width{
+    display: flex;
+    width: 300px;
+}
+
+.navigation__body__main__nav__ul{
+    display: grid;
+    margin: 0%;
+    padding: 0%;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto ;
+    grid-row-gap: 1cm;
+    grid-column-gap: .5cm;
+    justify-content: space-evenly;
+}
+
+.navigation__body__main__nav__ul__liststyle {
+    margin-top: auto;
+    margin-bottom: auto;
+    list-style-type:none;  
+     
+}
+
+
+/*Navegacion paginas que no son index*/
+.navigation__body__main__nav__ul__liststyle__sectionstyle{
+    text-decoration: none;
+    list-style-type:none;    
+    color: black;
+    font-weight: bold;
+    font-size: large;    
+    padding: 0cm;
+}
+
+.navigation__body__header__headerdesign__logo {
+    display: inline;
+}
+
+.body__main{
+    text-align: justify;  
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: large;
+}
+.body__main__p{
+    text-align: justify;  
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: .6cm;
+}
+
+/*Estilo fotos servicio*/
+.navigation__body__main__nav__ul__liststyle__logos {
+    padding-left: .5cm;
+    padding-right: .5cm;
+    height: 2cm;
+    align-items: center;
+}
+
+.portfolio__navigation__body__main__nav__ul__pics{
+    padding: 0%;
+    display: grid;
+    margin: 0 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto ;
+    grid-row-gap: .5cm; 
+    list-style:none;
+}
+
+
+.portfolio__navigation__body__main__nav__ul__pics li{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio__navigation__body__main__nav__ul__liststyle__pics{
+    display: flex;
+    width: 8cm;
+}
+
+
+/*Estilo logos empresas*/
+.navigation__body__main__nav__ul__pics{
+    display: grid;
+    margin: 0cm;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto ;
+    grid-row-gap: .5cm; 
+    list-style:none;
+}
+.navigation__body__main__nav__ul__pics li{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Estilo logos clientes*/
+.navigation__body__main__nav__ul__pics__clientes{
+    display: grid;
+    margin: 0cm;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto ;
+    grid-row-gap: .5cm; 
+    list-style:none;
+}
+.navigation__body__main__nav__ul__pics__clientes li{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navigation__body__main__nav__ul__liststyle__pics {
+    display: inline-flex;
+    height: 5cm;
+    margin: 0cm;
+    padding: 0;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navigation__body__main__nav__ul__image__logo{
+    align-items: center;
+    justify-content: center;
+}
+
+ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+
+/* Index Mobile*/
+
+
+@media only screen and (min-width: 920px) {
+    .navigation__body__main__nav__ul:hover {
+        position: relative;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+    
+}
+
+
+@media only screen and (max-width: 1025px) {
+    .body__main__nav__ul__liststyle {
+        list-style:none;
+        width: 75px; 
+    }
+    .body__main__nav__ul__liststyle:hover {
+        width: 150px;
+        height: 125px;
+    }
+    
+}
+
+@media only screen and (max-width: 700px){
+    .body__main__nav__ul{
+        display: grid;
+        margin: 0%;
+        padding: 0%;
+        grid-template-columns: auto ;
+        grid-template-rows: auto auto auto auto auto;
+        grid-row-gap: 1cm;
+        justify-content: space-evenly;
+        text-align: center; 
+    }
+    .body__main__nav__ul__liststyle:hover {
+        width: 200px;
+    }
+
+}
+
+@media only screen and (min-width: 920px){
+    .navigation__bony__header__menu__button{
+        display: none;
+    }
+    .navigation__body__main__nav__ul__liststyle:hover {
+        position: relative;
+        content: "";
+        background-color: rgba(255, 183, 183, .7);
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        transition: transform 0.3s ease;
+        background-origin: 50px;
+    }
+}
+
+
+
+/* Navbar responsive Mobile*/
+@media only screen and (max-width: 920px){
+    .navigation__body__header__logo{
+        margin-left: 1.5cm;
+    }
+/* Disposicion en vista mobile*/
+    .grid__father{
+        display: grid;
+        margin: 0 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 3fr 1fr;
+        grid-row-gap: .5cm; 
+    }
+    
+    .grid__son{
+        max-height:7cm; 
+        margin: 0 0;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto;
+        grid-row-gap: .5cm; 
+        
+    }
+
+    .navigation__body__main__nav__ul{
+        margin: 0%;
+        display: grid;
+        padding: 0%;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto ;
+        grid-row-gap: 1cm;
+        justify-content: center;
+    }
+    /* width en mobile de los elementos del index*/
+    .navigation__body__main__nav__ul__liststyle {
+        width: 300px;
+    }
+    
+    .navigation__body__menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(-135deg,#dd7777, #ffffff);
+        clip-path: circle(1px at calc(100% - 0px) 0px);
+        transition: all 0.3s ease-in-out;
+    }
+    #active:checked ~ .navigation__body__menu{
+        clip-path: circle(80%);
+    }
+    .navigation__bony__header__menu__button{
+        position: absolute;
+        z-index: 2;
+        right: 100px;
+        top: 37%;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+        background: linear-gradient(-135deg, #dd7777, #ffffff);
+        transition: all 0.3s ease-in-out;
+    }
+ 
+    #active:checked ~ .navigation__bony__header__menu__button i:before{
+        content: "\f00d";
+    }
+    .navigation__body__menu ul{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+        text-align: center;
+    }
+    .navigation__body__menu ul li{
+        margin: -20px 0;
+    }
+    .navigation__body__menu ul li a{
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: 500;
+        padding: 5px 30px;
+        color: #fff;
+        position: relative;
+        line-height: 50px;
+        transition: all 0.3s ease;
+    }
+    .navigation__body__menu ul li a:after{
+        position: absolute;
+        content: "";
+        background: #fff;
+        width: 100%;
+        height: 50px;
+        left: 0;
+        border-radius: 50px;
+        transform: scaleY(0);
+        z-index: -1;
+        transition: transform 0.3s ease;
+    }
+    .navigation__body__menu ul li a:hover:after{
+        transform: scaleY(1);
+    }
+    .navigation__body__menu ul li a:hover{
+        color: #d04141;
+    }
+    input[type="checkbox"]{
+        display: none;
+    }
+    .content{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        text-align: center;
+    }
+
+    /*Estilo fotos servicio*/
+    .navigation__body__main__nav__ul__liststyle__logos {
+        padding-left: .5cm;
+        padding-right: .5cm;
+        height: 2cm;
+        align-items: center;
+    }
+    /*Estilo logos clientes*/
+    .navigation__body__main__nav__ul__pics{
+        display: grid;
+        margin: 0 0;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr ;
+        grid-row-gap: .5cm; 
+        list-style:none;
+    }
+
+    .navigation__body__main__nav__ul__pics__clientes{
+        display: grid;
+        margin: 0 0;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr  ;
+        grid-row-gap: .5cm; 
+        list-style:none;
+    }
+
+    .navigation__body__main__nav__ul__liststyle__pics {
+        display: inline-flex;
+        height: 3cm;
+        margin: 0cm;
+        padding: 0;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    ul li a{
+        color: black;
+        text-decoration: none;
+    }
+    
+    .portfolio__navigation__body__main__nav__ul__pics{
+        padding: 0%;
+        display: grid;
+        margin: 0 0;
+        grid-template-columns: auto ;
+        grid-template-rows: 1fr 1fr 1fr ;
+        grid-row-gap: .5cm; 
+        list-style:none;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 540px){
+    .navigation__body__header__logo__width{
+        width: 0px;
+        height: 150px;
+    }
+
+    .navigation__bony__header__menu__button{
+        position: relative;
+        z-index: 2;
+        right: 55%;
+        left: 45%;
+
+    }
+    .navigation__body__header__logo{
+        margin-left: 0cm;
+    }
+}

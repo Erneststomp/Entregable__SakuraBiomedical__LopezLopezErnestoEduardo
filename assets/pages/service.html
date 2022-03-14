@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotización</title>
+    <link href="../css/index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <p class="body__background"></p>
+    <div class="grid__father">    
+        <header class="grid__son"> 
+            <input type="checkbox" id="active">
+            <label for="active" class="navigation__bony__header__menu__button"><i class="fas fa-bars"></i></label>
+            <picture class="navigation__body__header__logo"><a href="../../index.html"><img src="../../assets/images/sakura_biomedical-02.png" class="navigation__body__header__logo__width"></a></picture>
+            <nav class="navigation__body__menu">
+                <ul class="navigation__body__main__nav__ul">
+                    <li class="navigation__body__main__nav__ul__liststyle">
+                        <a href="../../index.html"> 
+                            <span class=" navigation__body__main__nav__ul__liststyle__sectionstyle">Home</span> </a></li>
+                    <li class="navigation__body__main__nav__ul__liststyle">
+                        <a href="about.html"> 
+                            <span class=" navigation__body__main__nav__ul__liststyle__sectionstyle">Nosotros</span> </a> </li>                  
+                    <li class="navigation__body__main__nav__ul__liststyle">
+                        <a href="clients.html"> 
+                            <span class=" navigation__body__main__nav__ul__liststyle__sectionstyle">Nuestros Clientes</span> </a></li>
+                    <li class="navigation__body__main__nav__ul__liststyle">
+                        <a href="portafolio.html"> 
+                            <span class=" navigation__body__main__nav__ul__liststyle__sectionstyle">Nuestro Trabajo</span> </a></li>
+                    <li class="navigation__body__main__nav__ul__liststyle">
+                        <a href="contact.html"> 
+                            <span class=" navigation__body__main__nav__ul__liststyle__sectionstyle">Contacto</span> </a></li>
+                </ul> 
+            </nav>
+        </header>
+
+        <main class="content">
+            <section>
+                    <h2>Datos del Cliente</h2>
+                    <form  class="body__main"> 
+                    
+                        <label for="apellidos">Apellidos</label>
+                        <br>
+                        <input type="text" id="apellidos" name="apellido" placeholder="Apellidos" >
+                        <br>
+                        <label for="nombres">Nombres</label>
+                        <br>
+                        <input type="text" id="nombres" name="nombres" placeholder="Nombres">
+                        <br>
+                        <label for="company">Empresa/Hospital</label>
+                        <br>
+                        <input type="text" id="company" name="company" placeholder="Empresa/Hospital">
+                        <br>
+                        <label for="correo">E-mail</label>
+                        <br>
+                        <input type="email" id="correo" name="correo" placeholder="E-mail">
+                        <br><br>
+                        <label for="servicio">Tipo de servicio</label>
+                        <br>
+                        <select name="servicio">
+                            <option selected value="0"> Elige el servicio que necesitas </option>
+                                <option value="1">Mantenimiento Preventivo</option> 
+                                <option value="2">Mantenimiento Correctivo</option> 
+                                <option value="3">Capacitaciones</option> 
+                                <option value="4">Instalación</option>
+                            </optgroup> 
+                        </select>
+                        <br>
+                        <label for="adjuntos">Adjuntar Archivos</label>
+                        <br>
+                        <input type="file" id="adjuntos" name="adjuntos" placeholder="Adjuntar archivos">
+                        <br>
+                        <label for="comentarios">Comentarios Adicionales</label>
+                        <br>
+                        <textarea name="comentarios" id="comentarios" placeholder="Ingrese sus comentarios" cols="50" rows="10"></textarea>
+                        <br>
+                        <input type="submit" name="enviar" id="enviar">
+                        <input type="reset" name="borrar" id="borrar">
+
+                    </form>
+
+            </section>
+        </main>
+
+        <footer class="body__footer">
+            <div>
+                <p class="body__footer__style">Copyright 2022 Todos los derechos reservados para mi nadamas.</p>
+            </div>
+        </footer>
+
+    </div>
+    
+</body>
+</html>
