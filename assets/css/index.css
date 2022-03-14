@@ -30,7 +30,7 @@ input[type="checkbox"]{
 
 /*Cambio de posicion de los elementos a relative para poder hacer que el fondo de pantalla no transparente el contenido */
 header{
-    background-color: rgba(255, 183, 183, 0.322);
+    background: linear-gradient(to bottom, rgb(238, 118, 118), white);
     position: relative;
     padding: .5cm;
 }
@@ -154,7 +154,7 @@ p{
 /*Estilo Index-footer*/
 .body__footer{ 
     position: fixed;
-    background-color: rgb(175, 10, 10);
+    background: rgb(252, 104, 104);
     margin-top: 0cm;
     margin-bottom: 0px;
     height: 50px;
@@ -181,6 +181,8 @@ p{
     width: 300px;
 }
 
+
+ 
 .navigation__body__main__nav__ul{
     display: grid;
     margin: 0%;
@@ -357,16 +359,37 @@ ul li a{
 @media only screen and (min-width: 920px){
     .navigation__bony__header__menu__button{
         display: none;
-    }
-    .navigation__body__main__nav__ul__liststyle:hover {
         position: relative;
-        content: "";
-        background-color: rgba(255, 183, 183, .7);
-        width: 100%;
         height: 100%;
-        border-radius: 15px;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+    .navigation__body__menu ul{
+        position: relative;
+        transform: translate(-0%, 0%);
+        list-style: none;
+        text-align: center;
+    }
+    .navigation__body__menu ul li a{
+        
+        position: relative;
+        line-height: 50px;
+        transition: all 0.3s ease;
+    }
+    .navigation__body__menu ul li a:after{
+        position: absolute;
+        content: "";
+        background: #fff;
+        width: 100%;
+        height: 50px;
+        left: 0;
+        border-radius: 50px;
+        transform: scaleY(0);
+        z-index: -1;
         transition: transform 0.3s ease;
-        background-origin: 50px;
+    }
+    .navigation__body__menu ul li a:hover:after{
+        transform: scaleY(1);
     }
 }
 
@@ -480,7 +503,7 @@ ul li a{
         transform: scaleY(1);
     }
     .navigation__body__menu ul li a:hover{
-        color: #d04141;
+        color: #ffffff;
     }
     input[type="checkbox"]{
         display: none;
@@ -545,6 +568,13 @@ ul li a{
 
 
 
+}
+
+@media only screen and (min-width: 540px){
+    .navigation__body__header__logo{
+    
+        width: 300px;
+    }
 }
 
 
